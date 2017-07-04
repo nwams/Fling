@@ -1,6 +1,9 @@
 language: java
-install:
-    # install all of the dependencies you need here
+jdk: oraclejdk8
+before_install:
+  # install all of the dependencies you need here
   - "curl -sSf https://gitlinks.github.io/cl-bins/install.sh | sh"
 script:
+  # test and build
+  - mvn package
   - ~/.gitlinks/hermes-rust-ci
