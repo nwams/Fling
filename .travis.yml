@@ -1,0 +1,6 @@
+language: java
+install:
+    # install all of the dependencies you need here
+  - "curl -sSf https://gitlinks.github.io/cl-bins/install.sh | sh"
+script:
+  - ~/.gitlinks/hermes-rust-ci
